@@ -11,6 +11,11 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "aiwealthbase.com", "custom_domain": true },
+    { "pattern": "www.aiwealthbase.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   }
