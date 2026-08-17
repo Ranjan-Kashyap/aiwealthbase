@@ -4,6 +4,7 @@ import Logo from "./Logo";
 const footerLinks = [
   { href: "/reviews", label: "Reviews" },
   { href: "/free-checklist", label: "Free Checklist" },
+  { href: "/tools/automation-roi-calculator", label: "ROI Calculator" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/privacy-policy", label: "Privacy Policy" },

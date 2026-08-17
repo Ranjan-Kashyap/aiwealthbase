@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/reviews",
     "/free-checklist",
+    "/tools/automation-roi-calculator",
     "/blog",
     "/privacy-policy",
     "/terms-of-service",
@@ -18,6 +19,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: route === "" || route === "/blog" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route === "/free-checklist" ? 0.9 : 0.7,
+    priority:
+      route === ""
+        ? 1
+        : route === "/free-checklist" || route === "/tools/automation-roi-calculator"
+          ? 0.9
+          : 0.7,
   }));
 }
