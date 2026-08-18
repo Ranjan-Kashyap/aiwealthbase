@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Build & deploy (OpenNext)
-        run: npx opennextjs-cloudflare deploy
+        run: npm run deploy
         env:
           NEXT_TELEMETRY_DISABLED: "1"
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
