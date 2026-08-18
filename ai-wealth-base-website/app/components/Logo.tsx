@@ -11,9 +11,10 @@ export default function Logo({ className = "" }: { className?: string }) {
       <Image
         src="/images/awb-logo.png"
         alt="AI Wealth Base"
-        width={500}
-        height={41}
-        className="h-6 w-auto max-w-[160px] sm:h-7 sm:max-w-[190px] xl:h-8 xl:max-w-[220px]"
+        width={2489}
+        height={200}
+        className="h-7 w-auto object-contain sm:h-8"
+        style={{ width: "auto" }}
         priority
       />
     </Link>
